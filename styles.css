@@ -1,19 +1,36 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    font-family: Open Sans Condensed;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
 }
 h1 {
     font-family: Open Sans Condensed;
     font-size: 24px;
     line-height: 23px;  
     color: #DFDFDF;
+    
+    font-weight: 100;
+}
+h2{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 17px;
 }
 h3{
     font-family: Open Sans Condensed;
@@ -22,6 +39,69 @@ h3{
     color: #DFDFDF; 
     font-weight: 100;
 }
-div#nav-title{
-    margin: 10px;
+button#black-bttn {
+    height: 34px;
+    width: 105px;
+    border: 1px solid #DFDFDF;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+button#black-bttn:hover{
+    cursor: pointer;
+    background: #fff; 
+}
+button#black-bttn:hover>h3{
+   color:black 
+}
+section#welcome-section{
+    background: black;
+    width: 297px;
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#welcome-section>h1{
+    font-family: Open Sans Condensed;
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 11px;
+    
+}
+div#welcome-div{
+    background-image: url(./src/fd40696bf253cdab5eb2efeda0126bcd\ 1.png);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+div#about{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#aboutme{
+    width: 723px;
+    height: 352px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+div#aboutme>p{
+    margin: 20px 20px;
+}
+p{
+    font-family: Open Sans Condensed;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    color: #DFDFDF;
 }
